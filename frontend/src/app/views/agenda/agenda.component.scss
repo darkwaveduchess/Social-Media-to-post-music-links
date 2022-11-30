@@ -1,6 +1,6 @@
 .field {
-    border-color: rgb(137, 137, 137);
-    background-color: grey;
+    border-color: rgb(176, 176, 176);
+    background-color: rgb(199, 199, 199);
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
@@ -9,5 +9,7 @@
     margin-bottom: 10px;
 }
 
-
+#enviarconsulta:hover {
+    opacity: 0.8;
+}
 
