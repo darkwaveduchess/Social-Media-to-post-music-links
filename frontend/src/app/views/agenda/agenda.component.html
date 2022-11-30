@@ -1,11 +1,17 @@
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+<div id="grid-container">
+  <div id="border">
+
+<h1>Entre no sei la ainda</h1><br>
+
+<button class="item1" onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -28,40 +34,39 @@
   </form>
 </div>
 
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cadastre-se!</button>
+<button class="item2" onclick="document.getElementById('id02').style.display='block'">Cadastre-se!</button>
 
 <div id="id02" class="modal2">
 
   <form class="modal2-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
       <label for="fname"><b>Nome:</b></label>
-      <input type="fname" placeholder="Nome:" name="fname" required>
+      <input type="text" placeholder="Nome:" name="name" required><br>
 
       <label for="lname"><b>Sobrenome:</b></label>
-      <input type="lname" placeholder="Sobrenome:" name="lname" required>
+      <input type="lname" placeholder="Sobrenome:" name="lname" required><br>
 
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Crie um nome de usuário:" name="username" required>
+      <input type="text" placeholder="Crie um nome de usuário:" name="username" required><br>
 
       <label for="date"><b>Data de Nascimento:</b></label>
-      <input type="date" placeholder="Data de nascimento:" name="date" required>
+      <input type="date" placeholder="Data de nascimento:" name="date" required><br>
 
       <label for="email"><b>E-mail:</b></label>
-      <input type="email" placeholder="E-mail:" name="email" required>
+      <input type="email" placeholder="E-mail:" name="email" required><br>
 
       <label for="tel"><b>Telefone:</b></label>
-      <input type="tel" placeholder="(**)*****-****" name="tel" required>
+      <input type="tel" placeholder="(**)*****-****" name="tel" required><br>
 
       <label for="psw"><b>Crie sua senha:</b></label>
-      <input type="password" placeholder="Crie sua senha:" name="psw" required>
+      <input type="password" placeholder="Crie sua senha:" name="psw" required><br>
 
       <label for="psw"><b>Confirme sua senha:</b></label>
-      <input type="password" placeholder="Confirme sua senha:" name="psw" required>
+      <input type="password" placeholder="Confirme sua senha:" name="psw" required><br>
 
       <button type="submit">Cadastrar</button>
       <label>
@@ -76,6 +81,8 @@
   </form>
 </div>
 
+</div>
+</div>
 <script>
   // Get the modal
   var modal = document.getElementById('id01');

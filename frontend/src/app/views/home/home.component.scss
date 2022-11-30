@@ -1,23 +1,215 @@
-.field {
-    border-color: rgb(176, 176, 176);
-    background-color: rgb(220, 234, 233);
-    border-radius: 10px;
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px 10px;
-    width: 100%;
-    margin-bottom: 10px;
-}
+// .field {
+//     border-color: rgb(176, 176, 176);
+//     background-color: rgb(220, 234, 233);
+//     border-radius: 10px;
+//     border-width: 1px;
+//     border-style: solid;
+//     padding: 5px 10px;
+//     width: 100%;
+//     margin-bottom: 10px;
+// }
 
-#enviarconsulta:hover {
-    opacity: 0.8;
-}
+// #enviarconsulta:hover {
+//     opacity: 0.8;
+// }
 
-dados {
+// dados {
+//     display: flex;
+//     justify-content: center;
+//     height: 100%;
+//     align-items: center;
+//     background-color: rgb(214, 253, 255)
+// }
+
+#backbutton {
+    background-color: #7feb6b;
+    width: 100px;
+    height: 44px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: flex;
-    justify-content: center;
-    height: 100%;
+    flex-direction: row;
     align-items: center;
-    background-color: rgb(214, 253, 255)
+    cursor: pointer;
 }
 
+input[type=button] {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  } 
+
+#form1 {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 98%;
+    justify-content: space-between;
+}
+#form {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input[type=search] {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  } 
+
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 10px;
+  }
+  
+  .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .date {
+    font-size: 56px;
+    padding-bottom: 10px;
+  }
+  
+  .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    width: 100%;
+  }
+  
+  .event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+
+  #MarcarConsulta {
+    background-color: greenyellow;
+    color:black;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  .divflex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .Horarios {
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .date,
+    .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event-date {
+      padding: 10px 0;
+    }
+  }

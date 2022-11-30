@@ -1,4 +1,4 @@
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=lname], input[type=date], input[type=email], input[type=tel]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -61,10 +61,10 @@ input[type=text], input[type=password] {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: none; /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: none;
+    padding-bottom: 30%;
   }
 
   .modal2 {
@@ -75,10 +75,10 @@ input[type=text], input[type=password] {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: none; /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 5px;
+    padding-bottom: 20%;
   }
   
   /* Modal Content/Box */
@@ -138,3 +138,42 @@ input[type=text], input[type=password] {
        width: 100%;
     }
   }
+
+#grid-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  height:100%;
+  width: 100%;
+  flex-flow: column;
+
+  h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
+   padding-bottom: 20px;
+  
+  }
+
+  #border {
+    background-color: #000;
+
+    border:#000 solid 2px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 90px 10px 80px 10px;
+    border-radius: 8px;
+
+    > button{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      width: 300px;
+      height: 40px;
+    }
+  }
+}
+
