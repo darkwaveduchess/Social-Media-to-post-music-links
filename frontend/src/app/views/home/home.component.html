@@ -8,10 +8,9 @@
 <label for="tipoconsulta">Tipo Consulta:</label><br>
 <select type="name" id="tipoconsulta" name="tipoconsulta" class="field">
   <option disabled selected hidden value="">Consultas:</option>
-  <option align="center" value="Canal">Canal</option>
-  <option align="center" value="Cirurgia">Cirurgia</option>
-  <option align="center" value="Manutençao">Manutençao</option>
-  <option align="center" value="Limpeza">Limpeza</option>
+  
+  <option *ngFor="let consulta of tipoConsultas" align="center" value="{{consulta}}">{{consulta.Nome}}</option>
+
 </select><br>
 
 <label for="dateconsulta">Data Consulta:</label><br>

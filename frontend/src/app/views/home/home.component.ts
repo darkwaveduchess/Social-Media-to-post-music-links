@@ -7,18 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  tipoConsultas:any = [];
+
   constructor() { }
 
   ngOnInit(): void {
 
+    fetch("http://localhost:3000/persons")
+    .then((response) => response.json())
+    .then((data) => this.tipoConsultas = data);
 
-     fetch("http://localhost:3000/persons");
 
-    // api.get('http://localhost:3000/persons').then(resp=>{
-    //   alert(resp)
-    // })
   }
-
-  
 
 }
