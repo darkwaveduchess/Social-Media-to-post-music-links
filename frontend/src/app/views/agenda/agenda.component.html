@@ -1,25 +1,95 @@
-<div>
-    
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Nome de usuário:" name="username" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Senha:" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembre de mim.
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#ededed">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+    </div>
+  </form>
 </div>
 
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cadastre-se!</button>
 
-<div id="div1" style="display:flex; justify-content: center; height:100%; align-items: center; background-color:rgb(224, 199, 179)">
-    <mat-card style="margin:10px; width: 300px; background-color: rgb(249, 249, 249);">
-      <mat-card-content>
-        <form class="example-form">
-  
-          <label for="fname">Nome Paciente:</label><br>
-          <input type="text" id="fname" name="fname" class="field" placeholder="Digite seu nome"><br>
-  
-          <label for="birthday">Data de nascimento:</label><br>
-          <input type="date" id="birthday" name="birthday" class="field"><br>
-  
-          <label for="phone">Número de telefone:</label><br>
-          <input class="field" type="tel" id="phone" name="phone" placeholder="(**)*****-****"><br><br>
+<div id="id02" class="modal2">
 
-          <input style="color:white; background-color:rgb(85, 113, 189)" class="field" type="submit" id="enviarconsulta1" value="Enviar">
+  <form class="modal2-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="fname"><b>Nome:</b></label>
+      <input type="fname" placeholder="Nome:" name="fname" required>
+
+      <label for="lname"><b>Sobrenome:</b></label>
+      <input type="lname" placeholder="Sobrenome:" name="lname" required>
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Crie um nome de usuário:" name="username" required>
+
+      <label for="date"><b>Data de Nascimento:</b></label>
+      <input type="date" placeholder="Data de nascimento:" name="date" required>
+
+      <label for="email"><b>E-mail:</b></label>
+      <input type="email" placeholder="E-mail:" name="email" required>
+
+      <label for="tel"><b>Telefone:</b></label>
+      <input type="tel" placeholder="(**)*****-****" name="tel" required>
+
+      <label for="psw"><b>Crie sua senha:</b></label>
+      <input type="password" placeholder="Crie sua senha:" name="psw" required>
+
+      <label for="psw"><b>Confirme sua senha:</b></label>
+      <input type="password" placeholder="Confirme sua senha:" name="psw" required>
+
+      <button type="submit">Cadastrar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembrar de mim.
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#ededed">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  var modal2 = document.getElementById('id02');
   
-        </form>
-      </mat-card-content>
-    </mat-card>
-  </div>
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      if (event.target == modal2) {
+          modal2.style.display = "none";
+      }
+  }
+  </script>
+
+
