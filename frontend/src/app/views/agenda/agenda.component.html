@@ -1,5 +1,3 @@
-
-
 <div id="grid-container">
 
 
@@ -8,30 +6,29 @@
     <h1 class="marqueconsulta">LOGIN:</h1>
     <div id="border">
 
-
+      <!-- //Botao Login para visitantes -->
       <button class="item1" onclick="document.getElementById('id01').style.display='block'">Login</button>
-
+      <!-- //Pagina Login  -->
       <div id="id01" class="modal">
-
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-              title="Close Modal">&times;</span>
-          </div>
-
+        <!-- Animação para abrir pagina Login -->
+        <form class="modal-content animate" onsubmit="return setAction(this)">
+          <!-- //Bloco Login (inputs) -->
           <div class="container">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Nome de usuário:" name="username" required>
+            <input type="text" placeholder="Nome de usuário:" name="username">
 
             <label for="psw"><b>Senha</b></label>
-            <input type="password" placeholder="Senha:" name="psw" required>
-
-            <button type="submit">Login</button>
+            <input type="password" placeholder="Senha:" name="psw">
+            <!-- entrar -->
+            <div>
+            <button>Entrar</button>
+            </div>
+            <!-- //checkbox -->
             <label>
               <input type="checkbox" checked="checked" name="remember"> Lembre de mim.
             </label>
           </div>
-
+          <!-- //Close Button       -->
           <div class="container" style="background-color:#ededed">
             <button type="button" onclick="document.getElementById('id01').style.display='none'"
               class="cancelbtn">Cancelar</button>
@@ -39,17 +36,13 @@
           </div>
         </form>
       </div>
-
+      <!-- //Segundo Botao (Cadastro) -->
       <button class="item2" onclick="document.getElementById('id02').style.display='block'">Cadastre-se!</button>
 
       <div id="id02" class="modal2">
-
-        <form class="modal2-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close"
-              title="Close Modal">&times;</span>
-          </div>
-
+      <!-- //Animacao Botao Cadastro -->
+        <form class="modal2-content animate">
+          <!-- //Inputs e informaçoes para cadastro -->
           <div class="container">
             <label for="fname"><b>Nome:</b></label>
             <input type="text" placeholder="Nome:" name="name" required><br>
@@ -64,14 +57,14 @@
             <input type="date" placeholder="Data de nascimento:" name="date" required><br>
 
             <label for="email"><b>E-mail:</b></label>
-            <input type="email" placeholder="E-mail:" name="email" required><br>
+            <input type="email" placeholder="E-mail:" name="email"  required><br>
 
             <label for="tel"><b>Telefone:</b></label>
-            <input type="tel" placeholder="(**)*****-****" name="tel" required><br>
+            <input type="tel" placeholder="(**)*****-****" name="tel"  required><br>
 
             <label for="psw"><b>Crie sua senha:</b></label>
-            <input type="password" placeholder="Crie sua senha:" name="psw" required><br>
-
+            <input type="password" placeholder="Crie sua senha:" name="psw"  required><br>
+            <!-- Lembrar de fazer a autenticacao de uma senha ser igual a outra  -->
             <label for="psw"><b>Confirme sua senha:</b></label>
             <input type="password" placeholder="Confirme sua senha:" name="psw" required><br>
 
@@ -80,37 +73,44 @@
               <input type="checkbox" checked="checked" name="remember"> Lembrar de mim.
             </label>
           </div>
-
+          <!-- //Cancelar -->
           <div class="container" style="background-color:#ededed">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'"
-              class="cancelbtn">Cancelar</button>
-            <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
           </div>
         </form>
       </div>
-
     </div>
     <br><br>
+    <!-- //H2 para cadastro de vendedores -->
     <h2>Use nossa agenda</h2>
     <div id="border2">
+      <!-- //Botao para cadastro (vendedores) -->
       <button>Cadastre-se!</button>
     </div>
   </div>
 
 </div>
 
+<!-- //Funcionalidades -->
 <script>
+
+function setAction(form) {
+  form.action = "register.html";
+  alert(form.action);
+  return false;
+}
   // Get the modal
   var modal = document.getElementById('id01');
   var modal2 = document.getElementById('id02');
 
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-    if (event.target == modal2) {
-      modal2.style.display = "none";
-    }
-  }
+  // window.onclick = function (event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  //   if (event.target == modal2) {
+  //     modal2.style.display = "none";
+  //   }
+  // }
+
 </script>

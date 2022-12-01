@@ -12,4 +12,13 @@ export class AgendaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
 }
+
+
+//funcao ao clicar no botao de entrar
+function entrar() {
+  alert("botao info")
+  }
+
