@@ -12,9 +12,11 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
+import { JobsComponent } from './views/Jobs/Jobs.component';
 import { AgendaComponent } from './views/agenda/agenda.component';
 
 const routes: Routes = [
+  { path: 'Jobs', component: JobsComponent},
   { path: 'agenda', component: AgendaComponent},
   { path: 'home', component: HomeComponent},
   { path: '', redirectTo: 'agenda', pathMatch: 'full'},
@@ -24,7 +26,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    AgendaComponent
+    AgendaComponent,
+    JobsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

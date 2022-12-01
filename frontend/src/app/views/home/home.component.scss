@@ -21,16 +21,28 @@
 //     background-color: rgb(214, 253, 255)
 // }
 
-#backbutton {
-    background-color: #7feb6b;
+.pricetext {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+
+.previous {
+    background-color: #eb6b6b;
     width: 100px;
+    color:#eee;
     height: 44px;
+    font: 16px system-ui;
+    align-items: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    justify-content: initial;
 }
 
 input[type=button] {
@@ -45,7 +57,6 @@ input[type=button] {
 #form1 {
     display: flex;
     justify-content: end;
-    width: 100%;
     padding-top: 30px;
     padding-bottom: 60px;
     width: 98%;
@@ -79,15 +90,17 @@ input[type=button] {
     all: unset;
     cursor: pointer;
     width: 44px;
-    height: 44px;
+    height: 25px;
   }
-  
+
   svg {
     color: #fff;
     fill: currentColor;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    width: 50px;
+    height: 60px;
+    padding-right: 12px;
+    padding-top: 0;
+    padding-bottom: 32px;
   }
 
 
@@ -98,10 +111,12 @@ input[type=button] {
   }
   
   .year {
+    padding-top: 10px;
     font-size: 40px;
     text-align: center;
     border-bottom: 1px solid #b1b1b1;
     padding-bottom: 10px;
+    margin-bottom: 40px;
   }
   
   .event {
@@ -177,22 +192,60 @@ input[type=button] {
     
   }
 
+  .price {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
   .divflex {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
-  .Horarios {
+  
+  .eventName {
+    justify-content: center;
+    width: 100%;
     font-size: 60px;
     text-align: center;
     border-bottom: 1px solid #b1b1b1;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+
 
   }
   
-  
+  .namejob {
+  left:40px;
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  }
+
+  .namejob img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: -20px;
+    border-bottom: 1px solid #b1b1b1;
+  }
+
   @media (max-width: 550px) {
     .event {
       flex-direction: column;
