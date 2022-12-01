@@ -38,11 +38,6 @@ input[type=text], input[type=password], input[type=lname], input[type=date], inp
     position: relative;
   }
   
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
   .container {
     padding: 16px;
   }
@@ -83,14 +78,14 @@ input[type=text], input[type=password], input[type=lname], input[type=date], inp
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #fefefef1;
     margin: 15% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
   .modal2-content {
-    background-color: #fefefe;
+    background-color: #fefefeec;
     margin: 5% auto 20% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -215,6 +210,12 @@ h1{
   border-left: solid 2px white;
   border-right: solid 2px rgb(0, 255, 221);
   
+}
+#icone {
+width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 

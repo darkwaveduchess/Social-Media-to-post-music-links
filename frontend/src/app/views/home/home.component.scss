@@ -43,7 +43,7 @@
 
 
 .previous {
-    background-color: #eb6b6b;
+    background-color: #ff0000;
     width: 100px;
     color:#eee;
     height: 44px;
@@ -56,6 +56,7 @@
     align-items: center;
     cursor: pointer;
     justify-content: initial;
+    padding-right: 10px;
 }
 
 input[type=button] {
