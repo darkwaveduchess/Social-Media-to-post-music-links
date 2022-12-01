@@ -143,37 +143,89 @@ input[type=text], input[type=password], input[type=lname], input[type=date], inp
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: #2a3e98;
   height:100%;
   width: 100%;
   flex-flow: column;
 
-  h1 {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5%;
-    border-bottom: 2px solid black;
-   padding-bottom: 20px;
-  
-  }
+ 
 
   #border {
-    background-color: #000;
-
-    border:#000 solid 2px;
+    background-color: rgb(198, 211, 255);
+    border: rgb(255, 255, 255) solid 2px;
     justify-content: center;
     display: flex;
     align-items: center;
     flex-flow: column;
-    padding: 90px 10px 80px 10px;
-    border-radius: 8px;
+    padding: 30px 50px 30px 50px;
+    border-radius: 15px;
 
     > button{
-      background-color: rgb(255, 255, 255);
-      color: rgb(0, 0, 0);
+      background-color: rgb(86, 65, 194);
+      border-radius: 20px;
+      color: rgb(255, 255, 255);
       width: 300px;
-      height: 40px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+
+  #border2 {
+    background-color: rgb(198, 211, 255);
+    border-top: rgb(255, 255, 255) solid 2px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+    > button{
+      background-color: rgb(55, 204, 210);
+      border-radius: 20px;
+      color: rgb(255, 255, 255);
+      width: 300px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
+h1{
+  border-bottom: solid 2px  #ffffff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-size: 37px;
+  font-style: initial;
+}
+
+#grade {
+  background-color: #2a3e98;
+  padding: 65px 20px 40px 20px;
+  border-radius: 20px;
+  flex-flow: column;
+  border-top: solid 2px white;
+  border-bottom: solid 2px rgb(0, 255, 221);
+  border-left: solid 2px white;
+  border-right: solid 2px rgb(0, 255, 221);
+  
+}
+
+
+h2{
+  border-top: solid 2px  #ffffff;
+  border-bottom: solid 2px  #ffffff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-style: initial;
+} 
+}
