@@ -13,6 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { AgendaComponent } from './views/agenda/agenda.component';
+import { FriendsComponent } from './views/friends/friends.component';
+import { ProfileComponent } from './views/profile/profile.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const routes: Routes = [
   { path: 'agenda', component: AgendaComponent},
@@ -24,7 +28,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    AgendaComponent
+    AgendaComponent,
+    FriendsComponent,
+    ProfileComponent,
+    NavbarComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -35,7 +42,8 @@ const routes: Routes = [
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

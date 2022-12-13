@@ -1,116 +1,419 @@
-<div id="grid-container">
+<!-- <h1 id="whatshappening">Sei la</h1>
 
 
-  <div id="grade">
-    <img id="icone" src="https://cdn-icons-png.flaticon.com/512/3899/3899618.png" alt="icon">
-    <h1 class="marqueconsulta">LOGIN:</h1>
-    <div id="border">
+<div class="stories">
 
-      <!-- //Botao Login para visitantes -->
-      <button class="item1" onclick="document.getElementById('id01').style.display='block'">Login</button>
-      <!-- //Pagina Login  -->
-      <div id="id01" class="modal">
-        <!-- Animação para abrir pagina Login -->
-        <form class="modal-content animate" onsubmit="return setAction(this)">
-          <!-- //Bloco Login (inputs) -->
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Nome de usuário:" name="username">
+  <div id="mystory">
+    <img id="yourstory" src="https://cdn-icons-png.flaticon.com/512/5948/5948875.png" width="60" height="40">
+    <a id="mystoryname">MyStory</a>
+  </div>
 
-            <label for="psw"><b>Senha</b></label>
-            <input type="password" placeholder="Senha:" name="psw">
-            <!-- entrar -->
-            <div>
-            <button>Entrar</button>
-            </div>
-            <!-- //checkbox -->
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Lembre de mim.
-            </label>
-          </div>
-          <!-- //Close Button       -->
-          <div class="container" style="background-color:#ededed">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-              class="cancelbtn">Cancelar</button>
-            <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
-          </div>
-        </form>
-      </div>
-      <!-- //Segundo Botao (Cadastro) -->
-      <button class="item2" onclick="document.getElementById('id02').style.display='block'">Cadastre-se!</button>
 
-      <div id="id02" class="modal2">
-      <!-- //Animacao Botao Cadastro -->
-        <form class="modal2-content animate">
-          <!-- //Inputs e informaçoes para cadastro -->
-          <div class="container">
-            <label for="fname"><b>Nome:</b></label>
-            <input type="text" placeholder="Nome:" name="name" required><br>
+  <div class="storyuser" *ngFor="let number of [0,1,2]">
 
-            <label for="lname"><b>Sobrenome:</b></label>
-            <input type="lname" placeholder="Sobrenome:" name="lname" required><br>
+    <div class="userstory">
+      <img class="story" src="https://cdn-icons-png.flaticon.com/512/5705/5705674.png" width="60" height="40">
+      <a class="userstoryname">leonardo</a>
 
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Crie um nome de usuário:" name="username" required><br>
-
-            <label for="date"><b>Data de Nascimento:</b></label>
-            <input type="date" placeholder="Data de nascimento:" name="date" required><br>
-
-            <label for="email"><b>E-mail:</b></label>
-            <input type="email" placeholder="E-mail:" name="email"  required><br>
-
-            <label for="tel"><b>Telefone:</b></label>
-            <input type="tel" placeholder="(**)*****-****" name="tel"  required><br>
-
-            <label for="psw"><b>Crie sua senha:</b></label>
-            <input type="password" placeholder="Crie sua senha:" name="psw"  required><br>
-            <!-- Lembrar de fazer a autenticacao de uma senha ser igual a outra  -->
-            <label for="psw"><b>Confirme sua senha:</b></label>
-            <input type="password" placeholder="Confirme sua senha:" name="psw" required><br>
-
-            <button type="submit">Cadastrar</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Lembrar de mim.
-            </label>
-          </div>
-          <!-- //Cancelar -->
-          <div class="container" style="background-color:#ededed">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
-          </div>
-        </form>
-      </div>
     </div>
-    <br><br>
-    <!-- //H2 para cadastro de vendedores -->
-    <h2>Use nossa agenda</h2>
-    <div id="border2">
-      <!-- //Botao para cadastro (vendedores) -->
-      <button>Cadastre-se!</button>
-    </div>
+
   </div>
 
 </div>
 
-<!-- //Funcionalidades -->
-<script>
+<hr id="secondline">
 
-function setAction(form) {
-  form.action = "register.html";
-  alert(form.action);
-  return false;
-}
-  // Get the modal
-  var modal = document.getElementById('id01');
-  var modal2 = document.getElementById('id02');
+<h2 id="write">Compartilhe uma musica</h2>
 
-  // When the user clicks anywhere outside of the modal, close it
-  // window.onclick = function (event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  //   if (event.target == modal2) {
-  //     modal2.style.display = "none";
-  //   }
-  // }
+<form id="form1">
+  <div class="usuariowrite">
+    <div id="tweetsubmit">
+      <input type="text" id="usertext" placeholder="Escreva aqui..." size="40%">
+      <input id="tweetbutton" type="image" src="https://cdn-icons-png.flaticon.com/512/318/318476.png" alt="Submit"
+        width="25%" height="100%">
+    </div>
 
-</script>
+
+    <div id="imageandvideo">
+
+      <button id="images">
+        <img src="https://cdn-icons-png.flaticon.com/512/4211/4211763.png">
+
+      </button>
+
+      <button id="videos">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/5697/5697997.png">
+
+      </button>
+
+    </div>
+
+
+  </div>
+</form>
+
+
+
+
+<br>
+<hr>
+
+<form class="postsofusers">
+
+  <div class="userpost">
+
+    <div id="userinfo">
+      <img id="usericononpost" src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="iconuser" width="15%"
+        height="100%">
+      <div id="userandnamedisplay">
+
+        <p id="namedisplay">leonardo</p>
+
+        <a id="userdisplay">@darkwaveduchess</a>
+      </div>
+    </div>
+
+    <h2 id="writed">0unubyubt7tycyvgb tv6vv6v y 7tvtvt7vyt </h2>
+
+
+
+      <div id="imageandname">
+        <img id="imagemusic" src="https://i.scdn.co/image/ab67616d0000b2731a302aafa2ea587960e27951" alt="imagemusic">
+
+
+        <div id="musicdescription">
+          <div id="whatsuserdoing">
+            <a id="musicname">Darq Souls</a>
+          </div>
+          <a id="albumname">Miss Anthropocene</a>
+          <a id="artistname">Grimes</a>
+        </div>
+      </div>
+
+      <div id="reactions">
+        <input id="commentblock" placeholder="Comentar...">
+
+
+        <input id="likebutton" type="image"
+        src="https://www.freeiconspng.com/thumbs/facebook-love-png/facebook-love-png-3.png"
+        width="7%" height="100%">
+
+
+      </div>
+    </div>
+
+    <hr>
+
+
+
+<br>
+<hr> -->
+
+
+
+<div class="middle">
+
+
+  <h4>Stories</h4><i class="edit"></i>
+
+
+
+  <div class="stories">
+
+
+    <div class="story">
+      <div class="profile-photo">
+        <img src="https://i.pinimg.com/originals/5b/c1/0c/5bc10cf800eb02f7d8e39b73ed3bdb17.jpg">
+      </div>
+      <p class="name">Your Story</p>
+    </div>
+
+    <div class="story">
+      <div class="profile-photo">
+        <img src="https://lastfm.freetls.fastly.net/i/u/770x0/c46f7c8ecc2113cf70999cf5fc0c8ff4.jpg">
+      </div>
+      <p class="name">Grimes</p>
+    </div>
+
+
+    <div class="story">
+      <div class="profile-photo">
+        <img src="https://lastfm.freetls.fastly.net/i/u/770x0/2cfb77c1edd53c19dbc309870bfc8075.jpg">
+      </div>
+      <p class="name">Caroline Polachek</p>
+    </div>
+
+    <div class="story">
+      <div class="profile-photo">
+        <img src="https://lastfm.freetls.fastly.net/i/u/770x0/739d5ad8c1282e258ea6e6c0ac298b0e.jpg">
+      </div>
+      <p class="name">Eartheater</p>
+    </div>
+
+
+  </div>
+
+
+  <form class="create-post">
+
+
+    <div class="create-post-input">
+      <input type="text" placeholder="Criar post">
+    </div>
+
+    <div class="create-button">
+      <button>Criar</button>
+    </div>
+
+
+  </form>
+
+
+</div>
+
+<hr>
+
+
+<div class="container">
+
+  <div class="feeds">
+    <h4>Timeline</h4><i class="edit"></i>
+
+    <div id="feed">
+
+      <div class="head">
+
+        <div class="user">
+          <div class="profile-photo">
+            <img src="https://i.pinimg.com/originals/5b/c1/0c/5bc10cf800eb02f7d8e39b73ed3bdb17.jpg">
+          </div>
+          <div class="infos">
+            <h3>leonardo</h3>
+            <small>@jcnjdbeneic</small>
+          </div>
+
+
+          <span class="edit">
+            <i class="uil-ellipsis"
+              src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/512/external-ellipsis-interface-royyan-wijaya-detailed-outline-royyan-wijaya.png"></i>
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="text-post">
+        <p class="text-in-posts">oiii</p>
+
+      </div>
+
+      <div class="music">
+        <div class="profile-music">
+          <div class="albuns">
+            <div class="info-music">
+              <div class="music-photo">
+                <img src="https://static.stereogum.com/uploads/2021/10/Eartheater-Scripture-1633539626.jpeg">
+              </div>
+    
+            </div>
+
+            <div class="flex flex-row justify-between items-end">
+              <div>
+                <h5>Scripture</h5>
+                <p class="text-muted">Eartheater</p>
+              </div>
+
+              <div>
+                <fa-icon [icon]="faStar" *ngFor="let number of [1,2,3,4,5]"></fa-icon>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="action-button">
+        <div class="interaction-buttons">
+
+          <span>
+            <input type="image" class="comment" src="https://img.icons8.com/ios/512/speech-bubble.png" width="30px">
+          </span>
+
+
+          <span>
+            <input type="image" class="heart" src="https://img.icons8.com/ios/512/hearts.png" width="35px">
+          </span>
+
+        </div>
+
+
+      </div>
+
+      <div class="liked-by">
+
+        <p> Curtido por <b> testeteste </b> e <b> 3.432 outros </b></p>
+
+      </div>
+
+      <div class="caption">
+        <p><b>testeteste</b> testando testando <span class="harsh-tag"></span></p>
+      </div>
+      <div class="comments text-muted">Ver outros 10 comentario.</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr>
+
+
+<div class="container">
+  <div class="feeds">
+
+    <div id="feed">
+
+      <div class="head">
+
+        <div class="user">
+          <div class="profile-photo">
+            <img src="https://ic.pics.livejournal.com/niallguitar/53554493/643848/643848_original.png">
+          </div>
+          <div class="infos">
+            <h3>xxxxxxxxxxx</h3>
+            <small>@ksdienencnin</small>
+          </div>
+
+
+          <span class="edit">
+            <i class="uil-ellipsis"
+              src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/512/external-ellipsis-interface-royyan-wijaya-detailed-outline-royyan-wijaya.png"></i>
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="text-post">
+        <p class="text-in-posts">
+Grew up under yellow light on the street
+</p>
+
+      </div>
+
+      <div class="music">
+        <img src="https://i1.wp.com/www.dci.com.br/wp-content/uploads/2020/08/Elon-Musk-Grimes-GettyImages.jpg">
+      </div>
+
+      <div class="action-button">
+        <div class="interaction-buttons">
+
+          <span>
+            <input type="image" class="comment" src="https://img.icons8.com/ios/512/speech-bubble.png" width="30px">
+          </span>
+
+
+          <span>
+            <input type="image" class="heart" src="https://img.icons8.com/ios/512/hearts.png" width="35px">
+          </span>
+
+        </div>
+
+
+      </div>
+
+      <div class="liked-by">
+
+        <p> Curtido por <b> leonardoguedes </b> e <b> 2 outros </b></p>
+
+      </div>
+
+      <div class="caption">
+        <p><b>leonardoguedes</b> Isso eh um comentario? <span class="harsh-tag">#comentario</span></p>
+      </div>
+      <div class="comments text-muted">Ver outros 2 comentario.</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr>
+
+
+<div class="container">
+  <div class="feeds">
+
+    <div id="feed">
+
+      <div class="head">
+
+        <div class="user">
+          <div class="profile-photo">
+            <img
+              src="https://preview.redd.it/rijose9otg191.png?width=432&format=png&auto=webp&s=2a2187ef32f59b087a097bff9d8939682b49d4c8">
+          </div>
+          <div class="infos">
+            <h3>Caroline Polachek</h3>
+            <small>@carolinepolachek</small>
+          </div>
+
+
+          <span class="edit">
+            <i class="uil-ellipsis"
+              src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/512/external-ellipsis-interface-royyan-wijaya-detailed-outline-royyan-wijaya.png"></i>
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="text-post">
+        <p class="text-in-posts"></p>
+
+      </div>
+
+      <div class="music">
+        <img
+          src="https://preview.redd.it/cilv2q79tg191.png?width=643&format=png&auto=webp&s=b71ec5f493cefb11de5c6fb8f779a9a4563aacac">
+      </div>
+
+      <div class="action-button">
+        <div class="interaction-buttons">
+
+          <span>
+            <input type="image" class="comment" src="https://img.icons8.com/ios/512/speech-bubble.png" width="30px">
+          </span>
+
+
+          <span>
+            <input type="image" class="heart" src="https://img.icons8.com/ios/512/hearts.png" width="35px">
+          </span>
+
+        </div>
+
+
+      </div>
+
+      <div class="liked-by">
+
+        <p> Curtido por <b> guedes </b> e <b> 35 outros </b></p>
+
+      </div>
+
+      <div class="caption">
+        <p><b>guedes</b> concordo <span class="harsh-tag"></span></p>
+      </div>
+      <div class="comments text-muted">Ver outros 10 comentario.</div>
+
+
+    </div>
+
+  </div>
+
+</div>

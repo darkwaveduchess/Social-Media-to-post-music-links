@@ -2,9 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --color-dark: hsl(252, 30%, 17%);
+    --color-white: white;
+    --color-gray: rgb(121, 119, 119);
+    --color-primary: rgb(70, 70, 186);
+    --color-secondary: hsl(0, 0%, 84%);
+    --color-sucess: rgb(71, 165, 71);
+    --color-danger: red;
+    --color-black: black;
+
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn--padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.profile-photo {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: var(--color-gray);
+}
+
+.nav1 {
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+.search-bar input [type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark)
+}
+
+
+::placeholder {
+    color: rgb(60, 60, 60) !important;
+    opacity: 1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+
+

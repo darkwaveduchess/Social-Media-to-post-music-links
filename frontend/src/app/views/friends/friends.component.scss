@@ -1,0 +1,153 @@
+
+    .friends {
+        height: max-content;
+        position: sticky;
+        margin-top: 4rem;
+        top: -18rem;
+        bottom: 0;
+
+        .messages {
+            background: rgb(255, 255, 255);
+            border-radius: var(--card-border-radius);
+            padding: var(--card-padding);
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .messages {
+            font-size: 1.4rem;
+
+            .search-bar {
+                display: flex;
+                margin-bottom: 1rem;
+            }
+
+            .category {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2.5rem;
+                border-bottom: 1px solid gray;
+
+                h6 {
+
+                    width: 100%;
+                    text-align: center;
+                    border: 1px solid rgb(255, 255, 255);
+                    padding-bottom: 1rem;
+                    font-size: 0.85rem;
+
+                }
+
+                .active {
+    
+                    border-color: var(--color-white);
+                    
+
+                }
+            }
+
+            .message {
+                border: 1px solid rgb(230, 230, 230);
+                display: flex;
+                gap: 1rem;
+                border-radius: var(--card-border-radius);
+                text-align: start;
+                padding: var(--card-padding);
+                margin-bottom: 0.4rem;
+
+                p { 
+                    font-size: 0.8rem;
+                }
+
+                .profile-photo {
+
+                    position: relative;
+                    overflow: hidden;
+                    margin-top: 0.2rem;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                    .active {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border-radius: 50%;
+                        border: 3px solid var(--color-white);
+                        background: rgb(255, 255, 255);
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+
+
+                    }
+                }
+            }
+
+            .message:last-child {
+                margin: 0;
+            }
+
+            .message-request {
+                color: var(--color-primary);
+            }
+        }
+
+        h4 {
+            color: var(--color-gray);
+            margin: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .friend-request {
+            justify-content: space-between;
+            margin-top: 1rem;
+            gap: 10rem;
+            overflow-x: auto;
+            max-height: 120px;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            scroll-snap-type: x mandatory;
+            border: 1px solid green;
+        }
+
+        .request {
+            
+            justify-content: space-between;
+            overflow-x: auto;
+            background: var(--color-secondary);
+            padding: var(--card-padding);
+            border-radius: var(--card-border-radius);
+            margin-bottom: 0.7rem;
+
+
+
+            .info {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 1rem;
+
+            }
+
+            .action {
+                display: flex;
+                gap: 1rem;
+            }
+
+            
+        }
+    }
+
+    .container {
+        margin-top: 2rem;
+        border-top: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+    }
+
+

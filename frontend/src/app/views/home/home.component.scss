@@ -1,283 +1,195 @@
-// .field {
-//     border-color: rgb(176, 176, 176);
-//     background-color: rgb(220, 234, 233);
-//     border-radius: 10px;
-//     border-width: 1px;
-//     border-style: solid;
-//     padding: 5px 10px;
-//     width: 100%;
-//     margin-bottom: 10px;
-// }
+.profile-settings {
+  margin-top: 2rem;
 
-// #enviarconsulta:hover {
-//     opacity: 0.8;
-// }
+  h4 {
+    color: var(--color-gray);
+    margin: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
 
-// dados {
-//     display: flex;
-//     justify-content: center;
-//     height: 100%;
-//     align-items: center;
-//     background-color: rgb(214, 253, 255)
-// }
+  .profile-setting {
+    margin: 2rem auto;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
 
-.pricetext {
-  font-size: 24px;
-  margin: 24px 0 10px 0;
-  color: #218bbb;
-  text-transform: uppercase;
-}
+    .profile-photo-sett {
+      display: flex;
+      width: 6rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      overflow: hidden;
 
-.custom-select {
-  background-color: #bac9ff;
-  border-radius: 8px;
-  padding-left: 14px;
-  
-
-  #selectdma {
-    background-color: #bac9ff;
-
-
+    }
   }
 }
 
-
-
-.previous {
-    background-color: #ff0000;
-    width: 100px;
-    color:#eee;
-    height: 44px;
-    font: 16px system-ui;
-    align-items: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  .category {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    justify-content: initial;
-    padding-right: 10px;
-}
-
-input[type=button] {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  } 
-
-#form1 {
-    display: flex;
-    justify-content: end;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    width: 98%;
     justify-content: space-between;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid gray;
+
+    h6 {
+
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgb(255, 255, 255);
+        padding-bottom: 1rem;
+        font-size: 0.85rem;
+
+    }
+
+    .active {
+
+        border-color: var(--color-white);
+        
+
+    }
 }
-#form {
-    background-color: #4654e1;
-    width: 300px;
-    height: 44px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
-  input[type=search] {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
+
+  .albuns-perfil {
+
+    display: flex;
+    flex-flow: row;
     width: 100%;
-    padding: 6px 10px;
-  } 
+    overflow-x: scroll;
+    justify-self: start;
 
-  ::placeholder {
-    color: #fff;
-    opacity: 0.7; 
-  }
+    .profile-music {
+      border-radius: var(--card-border-radius);
+      margin-top: 1rem;
+      gap: 2rem;
+      padding: var(--card-padding);
 
-  button {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 25px;
-  }
-
-  svg {
-    color: #fff;
-    fill: currentColor;
-    width: 50px;
-    height: 60px;
-    padding-right: 12px;
-    padding-top: 0;
-    padding-bottom: 32px;
-  }
+      .albuns {
+        width: 290px;
+        justify-content: space-between;
+        overflow-x: auto;
+        background: var(--color-secondary);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        margin-bottom: 0.7rem;
 
 
-.event-container {
-    font-family: "Roboto", sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .year {
-    padding-top: 10px;
-    font-size: 40px;
-    text-align: center;
-    border-bottom: 1px solid #b1b1b1;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-  }
-  
-  .event {
-    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
-    display: flex;
-    border-radius: 8px;
-    margin: 32px 0;
-  }
-  
-  .event-left {
-    background: #222;
-    min-width: 82px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #eee;
-    padding: 8px 48px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 8px 0 0 8px;
-  }
-  
-  .date {
-    font-size: 56px;
-    padding-bottom: 10px;
-  }
-  
-  .month {
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .event-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 24px;
-    width: 100%;
-  }
-  
-  .event-title {
-    font-size: 24px;
-    margin: 24px 0 10px 0;
-    color: #218bbb;
-    text-transform: uppercase;
-  }
-  
-  .event-timing {
-    background: #fff8ba;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    padding: 8px;
-    border-radius: 16px;
-    margin: 24px 0;
-    font-size: 14px;
+        .info-music {
+          width: 100%;
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+        }
+
+
+      }
+    }
+
   }
 
-  #MarcarConsulta {
-    background-color: greenyellow;
-    color:black;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 16px;
-    margin: 24px 0;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
+
+.container {
+  width: 96%;
+
+.feeds {
+
+  h4 {
+    color: var(--color-gray);
+    margin: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+  
+  
+  #feed {
     
-  }
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
 
-  .price {
+    .head {
+      display: flex;
+      justify-content: space-between;
 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    }
 
-  }
+    .user {
+      display: flex;
+      gap: 1rem;
+    }
 
-  .divflex {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+    .edit {
+      justify-self: end;
+      gap: 1rem;
+    }
 
-  
-  .eventName {
-    justify-content: center;
-    width: 100%;
-    font-size: 60px;
-    text-align: center;
-    border-bottom: 1px solid #b1b1b1;
-    padding-bottom: 50px;
+    .text-post {
+      margin: 0.5rem;
+      .text-in-posts {
+        font-size: 1rem;
+      }
+    }
+    .music {
+      padding: var(--card-padding);
+      max-height: 500px;
+      max-width: 300px;
+      border-radius: var(--card-border-radius);
+      overflow: hidden;
+      margin: 0.7rem 0;
 
+    }
 
-  }
-  
-  .namejob {
-  left:40px;
-  display: inline-block;
-  padding: 0 25px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-  }
+    .interaction-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.4rem;
+      margin: 0.6rem;
+      width: 70px;
+      margin-left: 15rem;
 
-  .namejob img {
-    float: left;
-    margin: 0 10px 0 -25px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-
-  .titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    padding-top: -20px;
-    border-bottom: 1px solid #b1b1b1;
-  }
-
-  @media (max-width: 550px) {
-    .event {
-      flex-direction: column;
+        input[type="image"] {
+          display: flex;
+      }
     }
   
-    .event-left {
-      padding: 0;
-      border-radius: 8px 8px 0 0;
+
+    
+
+    .liked-by {
+      display: flex;
+
+      span {
+        width: 1.4rem;
+        height: 1.4rem;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid white;
+        margin-left: -0.6rem;
+
+      }
+
+      span:first-child {
+        margin:0;
+      }
+
+      p {
+        margin-left: 0.5rem;
+      }
     }
   
-    .date,
-    .month {
-      display: inline-block;
-      font-size: 24px;
-    }
-  
-    .event-date {
-      padding: 10px 0;
-    }
+
   }
+
+
+}
+}

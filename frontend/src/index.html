@@ -1,16 +1,44 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Meow Dj</title>
+  <title>Social Media</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="mat-typography">
+
+<body>
+
+  <nav class="nav1">
+    <div class="container">
+      <h2 class="log">LeoSocial</h2>
+
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Pesquisar...">
+      </div>
+        <div class="profile-photo">
+          <img src="https://i.pinimg.com/originals/5b/c1/0c/5bc10cf800eb02f7d8e39b73ed3bdb17.jpg">
+      </div>
+    </div>
+  </nav>
   <app-root></app-root>
 </body>
+
+<script>
+
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+  });
+
+</script>
+
 </html>
