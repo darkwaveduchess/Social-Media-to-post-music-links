@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faLink, faImage, faLocationArrow, faGlobeAsia } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-agenda',
@@ -9,6 +9,10 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export class AgendaComponent implements OnInit {
 
   faStar = faStar;
+  faLink = faLink;
+  faImage = faImage;
+  faLocationArrow = faLocationArrow;
+  faGlobeAsia = faGlobeAsia;
 
   constructor() { }
 

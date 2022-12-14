@@ -11,10 +11,16 @@ export class AlbumCoverComponent implements OnInit {
   faStar = faStar;
 
   @Input() data: any; 
+  @Input() type: string = '';
 
-  constructor() { }
+  width: number = 210;
 
+  constructor() {
+  }
+  
   ngOnInit(): void {
+    if(this.type == 'review')
+      this.width = 140;
   }
 
 }

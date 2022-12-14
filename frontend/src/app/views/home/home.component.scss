@@ -1,22 +1,18 @@
 .profile-settings {
-  margin-top: 2rem;
 
   h4 {
+    padding-top: 2.8rem;
     color: var(--color-gray);
     margin: 1rem;
-    margin-bottom: 1rem;
     font-size: 1.4rem;
   }
 
   .profile-setting {
-    margin: 2rem auto;
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
 
     .profile-photo-sett {
       display: flex;
@@ -30,18 +26,21 @@
 }
 
   .category {
+    margin-top: 4rem;
+    width: 100%;
     display: flex;
+    color: var(--color-gray);
     justify-content: space-between;
-    margin-bottom: 2.5rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--color-gray);
 
-    h6 {
-
+    a {
+        border-radius: var(--card-border-radius);
         width: 100%;
         text-align: center;
-        border: 1px solid rgb(255, 255, 255);
-        padding-bottom: 1rem;
-        font-size: 0.85rem;
+        margin-top: 3rem;
+        padding-bottom: 1.2rem;
+        font-size: 1rem;
+
 
     }
 
@@ -59,137 +58,26 @@
     display: flex;
     flex-flow: row;
     width: 100%;
-    overflow-x: scroll;
-    justify-self: start;
-
-    .profile-music {
-      border-radius: var(--card-border-radius);
-      margin-top: 1rem;
-      gap: 2rem;
-      padding: var(--card-padding);
-
-      .albuns {
-        width: 290px;
-        justify-content: space-between;
-        overflow-x: auto;
-        background: var(--color-secondary);
-        padding: var(--card-padding);
-        border-radius: var(--card-border-radius);
-        margin-bottom: 0.7rem;
-
-
-        .info-music {
-          width: 100%;
-          display: flex;
-          gap: 1rem;
-          margin-bottom: 1rem;
-
-        }
-
-
-      }
-    }
-
-  }
-
-
-.container {
-  width: 96%;
-
-.feeds {
-
-  h4 {
-    color: var(--color-gray);
-    margin: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-  
-  
-  #feed {
-    
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
+    overflow-x: auto;
+    justify-content: center;
     padding: var(--card-padding);
-    margin: 1rem 0;
-    font-size: 0.85rem;
-    line-height: 1.5;
+    margin: 1rem;
 
-    .head {
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    .user {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .edit {
-      justify-self: end;
-      gap: 1rem;
-    }
-
-    .text-post {
-      margin: 0.5rem;
-      .text-in-posts {
-        font-size: 1rem;
-      }
-    }
-    .music {
-      padding: var(--card-padding);
-      max-height: 500px;
-      max-width: 300px;
-      border-radius: var(--card-border-radius);
-      overflow: hidden;
-      margin: 0.7rem 0;
-
-    }
-
-    .interaction-buttons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 1.4rem;
-      margin: 0.6rem;
-      width: 70px;
-      margin-left: 15rem;
-
-        input[type="image"] {
-          display: flex;
-      }
-    }
-  
-
-    
-
-    .liked-by {
-      display: flex;
-
-      span {
-        width: 1.4rem;
-        height: 1.4rem;
-        display: block;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 2px solid white;
-        margin-left: -0.6rem;
-
-      }
-
-      span:first-child {
-        margin:0;
-      }
-
-      p {
-        margin-left: 0.5rem;
-      }
-    }
-  
 
   }
 
+.recent {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow: auto;
 
+h4 {
+  color: var(--color-gray);
+  margin: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 }

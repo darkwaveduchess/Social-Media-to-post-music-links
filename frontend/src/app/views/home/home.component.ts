@@ -25,7 +25,14 @@ export class HomeComponent implements OnInit {
       artist: 'Grimes',
       image: 'https://i.pinimg.com/originals/67/2c/b6/672cb618bd0065e62747265f5e123063.jpg',
       stars: [0, 0, 0, 0, 1]
-    }
+    },
+    {
+      title: 'Scripture',
+      artist: 'Eartheater',
+      image: 'https://static.stereogum.com/uploads/2021/10/Eartheater-Scripture-1633539626.jpeg',
+      stars: [1, 1, 1, 1, 1]
+    },
+
   ]
 
   constructor() { }

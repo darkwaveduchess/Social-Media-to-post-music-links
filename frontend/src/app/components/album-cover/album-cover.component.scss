@@ -3,15 +3,15 @@
     margin-top: 1rem;
     gap: 2rem;
     padding: var(--card-padding);
+    grid-template-columns: min-content auto;
 
     .albuns {
-        width: 290px;
         justify-content: space-between;
-        overflow-x: auto;
         background: var(--color-secondary);
         padding: var(--card-padding);
         border-radius: var(--card-border-radius);
         margin-bottom: 0.7rem;
+        flex-shrink: initial;
 
 
         .info-music {
@@ -22,6 +22,28 @@
 
         }
 
+        .artist-name {
+            white-space: nowrap;
+            width: 90px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .stars,
+        .artist-name {
+            white-space: nowrap;
+        }
+
+
+
 
     }
+}
+.cutoff-text {
+    --maxlines: 7;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--maxlines);
 }

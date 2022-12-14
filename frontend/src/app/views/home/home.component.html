@@ -15,77 +15,22 @@
       <h6>Isso eh uma bio</h6>
     </div>
 
-    <div class="albuns-perfil">
-
-    <app-album-cover *ngFor="let album of albums" [data]="album"></app-album-cover>
-
-    <!-- <div class="profile-music">
-      <div class="albuns">
-        <div class="info-music">
-          <div class="music-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Grimes_-_Art_Angels.png">
-          </div>
-
-        </div>
-        <h5>Art Angels</h5>
-        <p class="text-muted">Grimes</p>
-
-      </div>
-    </div>
-
-    <div class="profile-music">
-      <div class="albuns">
-        <div class="info-music">
-          <div class="music-photo">
-            <img src="https://ellebrasil-wp-images.s3.amazonaws.com/2022/11/Bjork-Post.jpg">
-          </div>
-
-        </div>
-        <h5>Post</h5>
-        <p class="text-muted">Björk</p>
-
-      </div>
-    </div>
-
-
-    <div class="profile-music">
-      <div class="albuns">
-        <div class="info-music">
-          <div class="music-photo">
-            <img src="https://i.pinimg.com/originals/67/2c/b6/672cb618bd0065e62747265f5e123063.jpg">
-          </div>
-
-        </div>
-        <h5>Go</h5>
-        <p class="text-muted">Grimes</p>
-
-      </div>
-    </div>
-
-    <div class="profile-music">
-      <div class="albuns">
-        <div class="info-music">
-          <div class="music-photo">
-            <img src="https://static.stereogum.com/uploads/2021/10/Eartheater-Scripture-1633539626.jpeg">
-          </div>
-
-        </div>
-        <h5>Scripture</h5>
-        <p class="text-muted">Eartheater</p>
-
-      </div>
-    </div> -->
 
   </div>
+  
+  <h4>Escutados Recentemente</h4>
+  <div class="recent">
+    <app-album-cover *ngFor="let album of albums" [data]="album"></app-album-cover>
+  </div>
 
-</div>
+  <div class="category">
+    <a routerLink="timeline">Fotos</a>
+    <a routerLink="reviews">Reviews</a>
+    <a routerLink="stories">Stories</a>
+  </div>
 
-<div class="category">
-  <a routerLink="timeline">Timeline</a>
-  <a routerLink="reviews">Reviews</a>
-  <a routerLink="stories">Stories</a>
-</div>
 
-<router-outlet></router-outlet>
+
+  <router-outlet></router-outlet>
 
 </div>

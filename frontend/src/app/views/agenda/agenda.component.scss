@@ -329,13 +329,13 @@
   margin-top: 5rem;
 
 
-    h4 {
-      color: var(--color-gray);
-      margin: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
+  h4 {
+    color: var(--color-gray);
+    margin: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
-    
+
 
 
   .stories {
@@ -366,34 +366,131 @@
     }
   }
 
-  .create-post {
-    justify-content: space-between;
+  .wrapper {
+    width: 100%;
+    justify-content: center;
     display: flex;
-    background: var(--color-secondary);
-    border-radius: var(--border-radius);
-    padding: 1rem var(--card-padding);
-    justify-self: start;
     align-items: center;
-    margin: 1rem;
     margin-bottom: 2rem;
-  
-    .create-post-input input[type="text"] {
-      background: var(--color-gray);
+
+    .input-box {
+      width: 100%;
+      justify-self: start;
+      padding-top: 10px;
+      padding-bottom: 2rem;
       background: transparent;
-      width: 30vw;
-      padding: 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
       color: var(--color-dark)
+    }
+
+    .area {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      min-height: 130px;
+      min-width: 300px;
+      background-color: var(--color-secondary);
+
+
+      .placeholder {
+        pointer-events: none;
+        position: relative;
+        font-size: 20px;
+      }
+
+      .input {
+        border-radius: var(--card-border-radius);
+        width: 100%;
+        font-size: 17px;
+        word-wrap: break-word;
+      }
+
+      .readonly {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+
+    }
+
+  .bottom {
+    width: 100%;
+    display: flex;
+    margin-top: 13px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row;
+   
+    ul.icons {
+      display: inline-flex;
+      justify-content: space-between;
+
+      li {
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+        border-radius: var(--border-radius);
+        list-style: none;
+        height: 38px;
+        width: 38px;
+        background-color: var(--color-primary);
+        cursor: pointer;
+        align-items: center;
+        transition: background 0.2 ease;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    
+    }
+
+    .content {
+      justify-self: start;
+      display: flex;
+      align-items: center;
+      padding-left: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 1rem;
+      margin: -1rem;
+
+    }
+
+    .content .counter {
+      margin-right: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+      border-right: 1px solid gray;
+    }
+
+    .content .create {
+      pointer-events: none;
+      opacity: 0.5;
+      cursor: pointer;
+      padding: 9px 18px;
+      background: var(--color-dark);
+      color: var(--color-white);
+      border-radius: var(--card-border-radius);
+      font-weight: 700;
+
+    }
+
+  }
+
   }
 }
 
 
-} 
+.container {
+  width: 96%;
 
-
-  .container {
-    width: 96%;
-  
   .feeds {
 
     h4 {
@@ -401,11 +498,11 @@
       margin: 1rem;
       margin-bottom: 1rem;
       font-size: 1.4rem;
-  }
-    
-    
+    }
+
+
     #feed {
-      
+
       background: var(--color-white);
       border-radius: var(--card-border-radius);
       padding: var(--card-padding);
@@ -431,10 +528,12 @@
 
       .text-post {
         margin: 0.5rem;
+
         .text-in-posts {
           font-size: 1rem;
         }
       }
+
       .music {
         justify-content: center;
         padding: var(--card-padding);
@@ -456,13 +555,13 @@
         width: 70px;
         margin-left: 15rem;
 
-          input[type="image"] {
-            display: flex;
+        input[type="image"] {
+          display: flex;
         }
       }
-    
 
-      
+
+
 
       .liked-by {
         display: flex;
@@ -479,20 +578,17 @@
         }
 
         span:first-child {
-          margin:0;
+          margin: 0;
         }
 
         p {
           margin-left: 0.5rem;
         }
       }
-    
+
 
     }
 
-  
+
   }
 }
-
-
-

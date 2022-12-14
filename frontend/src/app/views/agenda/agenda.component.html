@@ -155,15 +155,47 @@
   </div>
 
 
-  <form class="create-post">
+  <form class="wrapper">
+    <div class="input-box">
+      <div class="area">
+        <span class="placeholder">Create Post</span>
+        <div class="input editable" contenteditable="true" spellcheck="false"></div>
+        <div class="input readonly" contenteditable="true" spellcheck="false"></div>
 
+        <div class="bottom">
+          <ul class="icons">
+            <li>
+              <i>
+                <fa-icon [icon]="faLink"></fa-icon>
+              </i>
 
-    <div class="create-post-input">
-      <input type="text" placeholder="Criar post">
-    </div>
+            </li>
 
-    <div class="create-button">
-      <button>Criar</button>
+            <li>
+              <i>
+                <fa-icon [icon]="faImage"></fa-icon>
+              </i>
+
+            </li>
+
+            <li>
+              <i>
+                <fa-icon [icon]="faLocationArrow"></fa-icon>
+              </i>
+
+            </li>
+
+          </ul>
+
+          <div class="content">
+            <span class="counter">100</span>
+            <button class="create">Create</button>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
 
@@ -278,8 +310,8 @@
 
       <div class="text-post">
         <p class="text-in-posts">
-Grew up under yellow light on the street
-</p>
+          Grew up under yellow light on the street
+        </p>
 
       </div>
 
