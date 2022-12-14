@@ -1,0 +1,27 @@
+.profile-music {
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    gap: 2rem;
+    padding: var(--card-padding);
+
+    .albuns {
+        width: 290px;
+        justify-content: space-between;
+        overflow-x: auto;
+        background: var(--color-secondary);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        margin-bottom: 0.7rem;
+
+
+        .info-music {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+
+    }
+}

@@ -17,7 +17,9 @@
 
     <div class="albuns-perfil">
 
-    <div class="profile-music">
+    <app-album-cover *ngFor="let album of albums" [data]="album"></app-album-cover>
+
+    <!-- <div class="profile-music">
       <div class="albuns">
         <div class="info-music">
           <div class="music-photo">
@@ -72,7 +74,7 @@
         <p class="text-muted">Eartheater</p>
 
       </div>
-    </div>
+    </div> -->
 
   </div>
 

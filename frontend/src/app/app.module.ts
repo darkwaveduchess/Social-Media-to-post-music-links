@@ -20,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TimelineComponent } from './views/home/tabs/timeline/timeline.component';
 import { ReviewsComponent } from './views/home/tabs/reviews/reviews.component';
 import { StoriesComponent } from './views/home/tabs/stories/stories.component';
+import { AlbumCoverComponent } from './components/album-cover/album-cover.component';
 
 const routes: Routes = [
   { path: 'agenda', component: AgendaComponent},
@@ -37,7 +38,8 @@ const routes: Routes = [
     NavbarComponent,
     TimelineComponent,
     ReviewsComponent,
-    StoriesComponent
+    StoriesComponent,
+    AlbumCoverComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
