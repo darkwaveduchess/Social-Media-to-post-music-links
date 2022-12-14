@@ -17,6 +17,9 @@ import { FriendsComponent } from './views/friends/friends.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TimelineComponent } from './views/home/tabs/timeline/timeline.component';
+import { ReviewsComponent } from './views/home/tabs/reviews/reviews.component';
+import { StoriesComponent } from './views/home/tabs/stories/stories.component';
 
 const routes: Routes = [
   { path: 'agenda', component: AgendaComponent},
@@ -31,7 +34,10 @@ const routes: Routes = [
     AgendaComponent,
     FriendsComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    TimelineComponent,
+    ReviewsComponent,
+    StoriesComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
