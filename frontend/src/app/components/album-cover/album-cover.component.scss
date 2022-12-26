@@ -7,7 +7,7 @@
 
     .albuns {
         justify-content: space-between;
-        background: var(--color-secondary);
+        // background: var(--color-secondary);
         padding: var(--card-padding);
         border-radius: var(--card-border-radius);
         margin-bottom: 0.7rem;
@@ -15,6 +15,7 @@
 
 
         .info-music {
+            background: var(--color-secondary);
             width: 100%;
             display: flex;
             gap: 1rem;
@@ -37,8 +38,11 @@
 
 
 
+
+
     }
 }
+
 .cutoff-text {
     --maxlines: 7;
 

@@ -5,23 +5,13 @@ nav{
     height: 50px;
     background-color: #eee;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    box-shadow: 0 -5px 10px rgba(0,0,0,0.25);
+    grid-template-columns: 1fr 1fr;
+   
 
     a {
-        display: block;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        &:nth-child(1){
-            background-image: url(https://cdn-icons-png.flaticon.com/512/1500/1500455.png);
-        }
-        &:nth-child(2){
-            background-image: url(https://cdn-icons-png.flaticon.com/512/1946/1946488.png);
-        }
-        &:nth-child(3){
-            background-image: url(https://cdn-icons-png.flaticon.com/512/747/747376.png);
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
     }
 }

@@ -1,424 +1,64 @@
-// #whatshappening {
-//   font-size: 300%;
-//   padding-left: 30px;
-//   padding-top: 5%;
-//   padding-bottom: 5%;
-//   padding-right: 55%;
-// }
 
 
-// .stories {
-//   display: flex;
-//   flex-flow: row;
-//   margin-bottom: 7%;
+.wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: dark;
 
-//   #mystory {
-//     margin-right: 5%;
-//     margin-left: 5%;
-//     padding: 1%;
-
-//     #mystoryname {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       padding: 1%;
-//     }
-//   }
-
-//   .storyuser {
-//     margin-right: 1%;
-
-//     .userstory {
-
-//       padding: 5px;
-
-//       .userstoryname {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         padding: 1%;
-//       }
-
-//     }
-
-//   }
-// }
-
-// #write {
-//   color: rgb(0, 0, 0);
-//   padding-left: 3%;
-//   font-size: 150%;
-//   padding-top: 5%;
-//   margin-bottom: 7%;
-// }
-
-// #form1 {
-//   display: flex;
-//   flex-flow: row;
-
-//   .usuariowrite {
-
-//     #usertext {
-//       width: 100%;
-//       height: 100%;
-//       margin-top: 4%;
-//       color: black;
-//       background-color: rgba(128, 128, 128, 0.295);
-//       padding: 3% 3% 3% 0;
-//     }
-
-//     margin-left: 2%;
-//     background-color: rgb(236, 235, 235);
-//     border-radius: 3%;
-//     padding: 4px 0px 10px 5px;
-//     width: 100%;
-//     height: 100%;
-//     border: 1% solid rgb(57, 57, 57);
-
-//     #tweetsubmit {
-//       display: flex;
-//       flex-flow: row;
-//     }
-
-//     #tweetbutton {
-//       margin: 2%;
-//       height: 100%;
-//       width: 15%;
-//     }
-
-//     #imageandvideo {
-
-//       display: flex;
-//       flex-flow: row;
-
-
-//       #images {
-//         width: 8%;
-//         height: 100%;
-//         margin: 2%;
-//       }
-
-//       #videos {
-//         width: 8%;
-//         height: 100%;
-//         margin: 2%;
-//       }
-//     }
-
-//   }
-
-
-// }
-
-// .userpost {
-//   background-color: rgb(255, 255, 255);
-//   border-radius: 1%;
-//   margin: 2%;
-//   width: 100%;
-
-//   #userinfo {
-//     display: flex;
-//     flex-flow: row;
-//     background-color: rgba(253, 253, 253, 0.731);
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 5%;
-
-
-//     #usericononpost {
-//       margin: 2%;
-//     }
-
-//     #namedisplay {
-//       display: inline-block;
-//       padding-top: 5%;
-//       margin: 2%;
-//       font-size: 140%;
-//       font-weight: bold;
-
-//       #userdisplay {
-//         display: inline-block;
-//         margin: 2%;
-//         font-size: 140%;
-//       }
-//     }
-//   }
-
-
-
-//   #imageandname {
-//     width: 90%;
-//     height: 80%;
-//     background-color: rgb(36, 32, 32);
-//     display: flex;
-//     flex-flow: row;
-//     border: 1% solid grey;
-//     border-radius: 2%;
-//     margin-left: 2%;
-//     margin-right: 3%;
-//     margin-top: 5%;
-//     margin-bottom: 7%;
-
-//     #musicdescription {
-//       width: 100%;
-//       height: 100%;
-//       margin: 1%;
-//       color: white;
-//       display: flex;
-//       flex-flow: column;
-//       justify-content: center;
-//       margin-top: 2%;
-
-//       #musicname {
-//         width: 180%;
-//         height: 100%;
-//         font-size: 130%;
-//         font-weight: bold;
-//         padding-right: 15%;
-//       }
-
-//       #albumname,
-//       #artistname {
-//         font-size: 110%;
-//         width: 100%;
-//         height: 100%;
-//       }
-
-
-//     }
-//   }
-// }
-
-
-// #reactions {
-//   display: flex;
-//   flex-flow: row;
-//   padding-bottom: 15px;
-
-//   #commentblock {
-//     width: 300px;
-//     height: 25px;
-//     background-color: rgba(182, 182, 182, 0.655);
-//     margin-right: 9px;
-//     border-radius: 20px;
-//     padding-right: 200px;
-//     opacity: 1;
-
-//     #likebutton {
-
-//       margin-right: 2%;
-//       padding: 5%;
-
-//     }
-
-
-
-
-
-
-
-//   }
-// }
-
-
-
-
-
-
-
-
-// #imagemusic {
-//   width: 90px;
-//   height: 90px;
-//   margin: 1%;
-// }
-
-
-// .grid-container {
-//   display: grid;
-//   grid-template-columns: auto auto auto;
-//   background-color: #ffffff;
-//   padding-top: 6%;
-//   padding-bottom: 3%;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   padding-left: 20%;
-// }
-
-// .grid-item {
-//   width: 30%;
-//   height: 100%;
-// }
-
-
-
-
-// #lyricsandname {
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgb(36, 32, 32);
-//   display: flex;
-//   flex-flow: row;
-//   border-radius: 2%;
-//   margin-left: 2%;
-//   margin-right: 3%;
-//   margin-top: 5%;
-//   margin-bottom: 7%;
-
-//   #blocklyrics {
-
-//     display: flex;
-//     flex-flow: column;
-//     border: 1px solid red;
-//     width: 100%;
-//     height: 100%;
-//     margin: 2%;
-
-//   #lyrics {
-//     margin: 2%;
-//     width: 100%;
-//     height: 100%;
-//     padding-bottom: 30%;
-//     background-color: beige;
-//   }
-
-
-
-
-
-//   #musicdescription {
-//     width: 100%;
-//     height: 100%;
-//     margin: 1%;
-//     color: white;
-//     display: flex;
-//     flex-flow: column;
-//     justify-content: center;
-//     margin-top: 2%;
-
-//     #musicname {
-//       display: flex;
-//       justify-content: center;
-//       width: 100%;
-//       height: 100%;
-//       font-size: 130%;
-//       font-weight: bold;
-//     }
-
-//     #albumname,
-//     #artistname {
-//       display: flex;
-//       justify-content: center;
-//       font-size: 110%;
-//       width: 100%;
-//       height: 100%;
-//     }
-
-
-//   }
-// }
-
-
-
-// }
-
-
-
-.middle {
-  margin-top: 5rem;
-
-
-  h4 {
-    color: var(--color-gray);
-    margin: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-  }
-
-
-
-  .stories {
-    margin: 0.2rem;
-    display: flex;
-    justify-content: space-between;
-    height: 12rem;
-    gap: 0.6rem;
-
-    .story {
-
-      padding: var(--card-padding);
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-
-    }
-
-    .profile-photo {
-      width: 4rem;
-      height: 4rem;
-      align-self: start;
-      border: 3px solid var(--color-primary);
-
-    }
-  }
-
-  .wrapper {
+  .input-box {
     width: 100%;
+    justify-self: start;
+    padding-top: 10px;
+    padding-bottom: 2rem;
+    background: transparent;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--color-white);
+  }
+
+  .area {
     justify-content: center;
-    display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    width: 100%;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    min-height: 130px;
+    min-width: 300px;
+    background-color: dark;
 
-    .input-box {
-      width: 100%;
-      justify-self: start;
-      padding-top: 10px;
-      padding-bottom: 2rem;
-      background: transparent;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: var(--color-dark)
+
+    .placeholder {
+      pointer-events: none;
+      position: relative;
+      font-size: 20px;
+      background-color: dark;
     }
 
-    .area {
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding: var(--card-padding);
+    .input {
       border-radius: var(--card-border-radius);
-      min-height: 130px;
-      min-width: 300px;
-      background-color: var(--color-secondary);
-
-
-      .placeholder {
-        pointer-events: none;
-        position: relative;
-        font-size: 20px;
-      }
-
-      .input {
-        border-radius: var(--card-border-radius);
-        width: 100%;
-        font-size: 17px;
-        word-wrap: break-word;
-      }
-
-      .readonly {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-
-
+      width: 100%;
+      font-size: 17px;
+      word-wrap: break-word;
+      border: 1px solid white;
     }
+
+    .readonly {
+      background-color: dark;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+
+  }
 
   .bottom {
+    background-color: dark;
     width: 100%;
     display: flex;
     margin-top: 13px;
@@ -426,8 +66,9 @@
     justify-content: space-between;
     display: flex;
     flex-flow: row;
-   
+
     ul.icons {
+      background-color: dark;
       display: inline-flex;
       justify-content: space-between;
 
@@ -439,31 +80,34 @@
         list-style: none;
         height: 38px;
         width: 38px;
-        background-color: var(--color-primary);
+        background-color: dark;
         cursor: pointer;
         align-items: center;
         transition: background 0.2 ease;
 
-        &:last-child{
+        &:last-child {
+          
           margin-right: 0;
         }
       }
-    
+
     }
 
     .content {
+      height: fit-content;
+      background-color: dark;
       justify-self: start;
       display: flex;
       align-items: center;
       padding-left: 0px;
       margin-left: 5px;
       margin-right: 5px;
-      padding: 1rem;
       margin: -1rem;
 
     }
 
     .content .counter {
+      background-color: dark;
       margin-right: 10px;
       padding-right: 10px;
       margin-left: 10px;
@@ -484,111 +128,63 @@
 
   }
 
-  }
 }
 
 
-.container {
-  width: 96%;
+//comecço feed
 
-  .feeds {
 
-    h4 {
-      color: var(--color-gray);
-      margin: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
+  h4 {
+    color: var(--color-gray);
+    margin: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+
+  #feed {
+    margin: 1rem 0;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-bottom: 1px solid gray;
     }
 
-
-    #feed {
-
-      background: var(--color-white);
-      border-radius: var(--card-border-radius);
-      padding: var(--card-padding);
-      margin: 1rem 0;
-      font-size: 0.85rem;
-      line-height: 1.5;
-
-      .head {
-        display: flex;
-        justify-content: space-between;
-
+    //icon, name and user
+      .profile-photo {
+        width: 3.3rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
       }
 
       .user {
         display: flex;
         gap: 1rem;
+        margin: 1rem;
       }
 
-      .edit {
-        justify-self: end;
-        gap: 1rem;
-      }
-
-      .text-post {
-        margin: 0.5rem;
-
-        .text-in-posts {
-          font-size: 1rem;
-        }
-      }
-
-      .music {
+      .post-review {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         justify-content: center;
-        padding: var(--card-padding);
-        max-height: 500px;
-        max-width: 400px;
-        border-radius: var(--card-border-radius);
-        overflow: hidden;
-        margin: 2rem auto;
-
-
       }
-
-      .interaction-buttons {
+    
+      .reactions {
+        align-items: center;
+        flex-flow: row;
+        right: 0;
+        width: 100%;
+        margin: 1rem auto;
+        padding: var(--card-padding);
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        font-size: 1.4rem;
-        margin: 0.6rem;
-        width: 70px;
-        margin-left: 15rem;
-
-        input[type="image"] {
-          display: flex;
-        }
+        flex-flow: row;
       }
 
+    
 
 
-
-      .liked-by {
-        display: flex;
-
-        span {
-          width: 1.4rem;
-          height: 1.4rem;
-          display: block;
-          border-radius: 50%;
-          overflow: hidden;
-          border: 2px solid white;
-          margin-left: -0.6rem;
-
-        }
-
-        span:first-child {
-          margin: 0;
-        }
-
-        p {
-          margin-left: 0.5rem;
-        }
-      }
+  
 
 
-    }
-
-
-  }
-}

@@ -6,7 +6,7 @@
     bottom: 0;
 
     .messages {
-        background: rgb(255, 255, 255);
+        background: dark;
         border-radius: var(--card-border-radius);
         padding: var(--card-padding);
     }
@@ -24,30 +24,6 @@
         .search-bar {
             display: flex;
             margin-bottom: 1rem;
-        }
-
-        .category {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid gray;
-
-            h6 {
-
-                width: 100%;
-                text-align: center;
-                border: 1px solid rgb(255, 255, 255);
-                padding-bottom: 1rem;
-                font-size: 0.85rem;
-
-            }
-
-            .active {
-
-                border-color: var(--color-white);
-
-
-            }
         }
 
         .message {
@@ -110,14 +86,15 @@
     .friends-requests {
         display: flex;
         flex-flow: row;
-        border-color: red;
         padding: var(--card-padding);
         margin-bottom: 5rem;
         overflow-x: auto;
+       
 
         .request {
+            border: 1px solid gray;
 
-            background: var(--color-gray);
+            background: dark;
             padding: var(--card-padding);
             border-radius: var(--card-border-radius);
             margin-bottom: 0.7rem;
@@ -125,6 +102,7 @@
             margin-right: 1rem;
 
             .info {
+                background: dark;
                 display: flex;
                 gap: 1rem;
                 margin-bottom: 1rem;

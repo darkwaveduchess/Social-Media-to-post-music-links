@@ -1,4 +1,5 @@
 <div class="profile-music grid">
+
     <div>
 
         <div class="albuns" [ngStyle]="{width:width+'px'}">
@@ -7,21 +8,36 @@
                 <img src="{{data.image}}">
             </div>
         </div>
+
         <div class="flex flex-row justify-between items-end">
+
             <div>
                 <h5>{{data.title}}</h5>
                 <p class="text-muted artist-name">{{data.artist}}</p>
             </div>
+
             <div *ngIf="type != 'review'" class="stars">
                 <fa-icon [icon]="faStar" *ngFor="let star of data.stars" [ngStyle]="{opacity:star?1:0.3}"></fa-icon>
             </div>
+
         </div>
+
     </div>
-    </div>
+
     <div *ngIf="type == 'review'">
         <div class="stars">
             <fa-icon [icon]="faStar" *ngFor="let star of data.stars" [ngStyle]="{opacity:star?1:0.3}"></fa-icon>
         </div>
         <p class="cutoff-text">{{data.review}}</p>
     </div>
+
+    <!-- <div *ngIf="type == 'post'">
+        <div class="stars">
+            <fa-icon [icon]="faStar" *ngFor="let star of data.stars" [ngStyle]="{opacity:star?1:0.3}"></fa-icon>
+        </div>
+
+        <p class="cutoff-text">{{data.review}}</p>
+    </div> -->
+
+
 </div>

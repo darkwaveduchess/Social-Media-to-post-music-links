@@ -7,12 +7,14 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*"); 
 	//Quais são os métodos que a conexão pode realizar na API
     res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
+
+    res.header("Access-Control-Allow-Headers", 'Content-Type')
     app.use(cors());
     next();
 });
 
 /* ROUTES */
 app.use('/',  require('./routes/health'));
-app.use('/persons', require('./routes/personRoute'));
+app.use('/review', require('./routes/reviewRoute'));
 
 module.exports = app;

@@ -33,12 +33,13 @@
     text-decoration: none;
     list-style: none;
     border: none;
-    /* outline: 1px solid red; */
+    background-color: black;
+     /* outline: 1px solid red; */
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--color-dark);
+    color: var(--color-white);
     background: var(--color-light);
     overflow-x: hidden;
 }
@@ -72,7 +73,7 @@ img {
 
 .nav1 {
     width: 100%;
-    background-color: var(--color-white);
+    background-color: black;
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
@@ -80,23 +81,26 @@ img {
 }
 
 .container {
+    background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .search-bar {
-    background: var(--color-light);
+    background: var(--color-secondary);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
 }
+
+
 
 .search-bar input [type="search"] {
     background: transparent;
     width: 30vw;
     margin-left: 1rem;
     font-size: 0.9rem;
-    color: var(--color-dark)
+    color: var(--color-secondary)
 }
 
 

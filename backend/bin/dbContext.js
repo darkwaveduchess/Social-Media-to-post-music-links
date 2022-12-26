@@ -1,4 +1,4 @@
-const database = 'AgendaPaciente';
+const database = 'LeoSocial';
 const server = 'localhost';
 
 module.exports = {
