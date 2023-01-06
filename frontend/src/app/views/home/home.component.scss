@@ -8,6 +8,10 @@
   }
 
   .profile-setting {
+    background-image: url("https://64.media.tumblr.com/e85d1a90939a1f58aea1ed5361ab689c/d055c6c757796be6-05/s1280x1920/4df910b87b2fd03f448fa47c10757fd7308a8075.png");
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -16,13 +20,45 @@
 
     .profile-photo-sett {
       display: flex;
-      width: 6rem;
+      width: 8rem;
       aspect-ratio: 1/1;
       border-radius: 50%;
       overflow: hidden;
-
     }
   }
+
+  .info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+    .infos {
+      display: flex;
+      flex-flow:column;
+      background: transparent;
+
+      .name {
+        font-size: 200%;
+        font-weight: bold;
+        background: transparent;
+      }
+      .username {
+        font-size: 120%;
+        background: transparent;
+      }
+    }
+      .bio-profile {
+        margin-top: 2rem;
+        display: flex;
+        background: transparent;
+      .bio {
+        background: transparent;
+      }
+    }
+
+    }
 }
 
   .category {

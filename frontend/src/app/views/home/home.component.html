@@ -1,4 +1,5 @@
 <div class="profile-settings">
+ 
   <h4>Profile</h4><i class="edit"></i>
 
   <div class="profile-setting">
@@ -6,18 +7,26 @@
     <div class="profile-photo-sett">
       <img src="https://i.pinimg.com/originals/5b/c1/0c/5bc10cf800eb02f7d8e39b73ed3bdb17.jpg">
     </div>
+    </div>
+
+    <div class="info">
+
     <div class="infos">
-      <h3>leonardo</h3>
-      <small>@jcnjdbeneic</small>
+      <h3 class="name">leonardo</h3>
+      <small class="username">@jcnjdbeneic</small>
     </div>
 
     <div class="bio-profile">
-      <h6>Isso eh uma bio</h6>
+      <h3 class="bio">Isso eh uma bio</h3>
     </div>
 
-
   </div>
+
+
   
+
+
+
   <h4>Escutados Recentemente</h4>
   <div class="recent">
     <app-album-cover *ngFor="let album of albums" [data]="album"></app-album-cover>

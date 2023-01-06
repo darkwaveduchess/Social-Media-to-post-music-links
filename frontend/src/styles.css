@@ -69,6 +69,7 @@ img {
 
 .text-muted {
     color: var(--color-gray);
+    background: transparent;
 }
 
 .nav1 {
